@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Website Demo</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="fa-solid fa-bars"></i>
+          </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./images/noi-that-nha-dep.png" alt="">
+                </a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PHÒNG KHÁCH 
+                  </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Sofa da</a></li>
+                                    <li><a class="dropdown-item" href="#">Sofa vải</a></li>
+                                    <li><a class="dropdown-item" href="#">Sofa giường</a></li>
+                                    <li><a class="dropdown-item" href="#">Bàn trà</a></li>
+                                    <li><a class="dropdown-item" href="#">Ghế thư giãn</a></li>
+                                    <li><a class="dropdown-item" href="#">Tủ - Kệ</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PHÒNG ĂN
+                  </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Bàn ăn thông minh mở rộng</a></li>
+                                    <li><a class="dropdown-item" href="#">Ghế ăn</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PHÒNG NGỦ
+                  </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Phòng ngủ người lớn</a></li>
+                                    <li><a class="dropdown-item" href="#">Phòng ngủ trẻ em</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    TRANG TRÍ VÀ GIA DỤNG
+                  </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">THIẾT KẾ NỘI THẤT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BLOG TƯ VẤN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SẢN PHẨM KHUYẾN MÃI</a>
+                            </li>
+                        </ul>
+                        <div class="search-box">
+                            <button class="btn-search"><i class="fas fa-search"></i></button>
+                            <input type="text" class="input-search" placeholder="Tìm Kiếm">
+                        </div>
+                        <div class="login">
+                            <button id="myBtn">
+                            <i class="fa-solid fa-user"></i>
+                        </button>
+
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-contents">
+                                    <span class="close">&times;</span>
+                                    <p>Some text in the Modal..</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--  -->
+        <!-- phần thân -------------------------------------------- -->
+        <div class="banner">
+
+            <div class="mySlides fade">
+                <img src="./images/ND_Web_Cover2-01 (2).jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./images/ND_Web_Cover-04.jpg">
+            </div>
+
+
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <!--  -->
+        <div class="containers">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div style="margin-bottom: 25px;" class="">
+                        <a href="">
+                            <img src="./images/ban-an-thong-minh-mo-rong.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="">
+                            <img src="./images/bo-suu-tap-ban-tra-cao-cap.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="">
+                        <img src="./images/d907bb7e4f39b667ef28.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="">
+                        <img src="./images/sofa-da-rinova.jpg" alt="" style="height: 190px;object-fit: cover;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="content">
+            <div class="tabs">
+                <button class="tablinks active" data-electronic="allproducts">Mới Nhất</button>
+                <button class="tablinks" data-electronic="Microcontrollers">Xem Nhiều nhất</button>
+            </div>
+            <div class="wrapper_tabcontent">
+                <div id="allproducts" class="tabcontent active">
+                    <div class="tabcontent-sub">
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/WeChat Image_20220322132533.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Ghế ăn bọc PU</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/WeChat Image_202203221328151.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Ghế ăn bọc PU</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/ND_Website_SP-08.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Kệ sách 7 tầng 1 ngăn</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/ND_Website_SP-05.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Kệ trang trí</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/ND_Website_SP-06.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Kệ sách 7 tầng 2
+                                    </p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/giuong.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Giường ngủ 1.8x2m
+                                    </p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/_DSC1485.png" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Sofa vải Libby</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/giuong-ngu-jimmy-83252002-500x358.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Giường ngủ Jimmy</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/ban-an-fiona-trang-71304003-2(1).jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Bàn ăn mở rộng Fiona</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/WeChat Image_202203221331522.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Ghế ăn bọc PU
+                                    </p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/WeChat Image_20220322132533.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Ghế ăn bọc PU</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/WeChat Image_20220322132533.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Ghế ăn bọc PU</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Microcontrollers" class="tabcontent">
+                    <div class="tabcontent-sub">
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/WeChat Image_20220322132533.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Ghế ăn bọc PU</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/WeChat Image_202203221328151.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Ghế ăn bọc PU</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/ND_Website_SP-08.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Kệ sách 7 tầng 1 ngăn</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/ND_Website_SP-05.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Kệ trang trí</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/ND_Website_SP-06.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Kệ sách 7 tầng 2
+                                    </p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/giuong.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Giường ngủ 1.8x2m
+                                    </p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/_DSC1485.png" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Sofa vải Libby</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/giuong-ngu-jimmy-83252002-500x358.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Giường ngủ Jimmy</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/ban-an-fiona-trang-71304003-2(1).jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Bàn ăn mở rộng Fiona</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/WeChat Image_202203221331522.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Ghế ăn bọc PU
+                                    </p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/WeChat Image_20220322132533.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Ghế ăn bọc PU</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                        <div class="content-item">
+                            <a href="">
+                                <img src="./images/WeChat Image_20220322132533.jpg" alt="">
+                            </a>
+                            <div class="content-title">
+                                <a href="">
+                                    <p>Ghế ăn bọc PU</p>
+                                </a>
+                                <p>1.410.000 đ</p>
+                            </div>
+                            <span>Mã SP: 72104114</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <footer>
+            <div class="footer">
+                <div class="footer-left">
+                    <div class="footer-contact">
+                        <img src="./images/noi-that-nha-dep.png" alt="">
+                        <p style="font-weight: bold;">Công ty TNHH Thương mại và Nội thất Nhà Đẹp</p>
+                        <p>Trụ sở: 02 Chương Dương Độ, Hoàn Kiếm, Hà Nội</p>
+                        <p>Hotline: 0906 264 268</p>
+                        <p>Tư vấn thiết kế: 093 636 2998</p>
+                        <p>Email: contact@nhadep.com.vn</p>
+                        <p>Website: nhadep.com.vn</p>
+                        <p>Giấy CNĐKKD : 0104257842 do sở KHĐT TP HN cấp</p>
+                        <p>Ngày: 17/11/2009 - Sửa đổi lần 8 ngày:18/5/2016</p>
+                    </div>
+                    <ul class="contact-icon">
+                        <li class="icon-item">
+                            <a href=""><img src="./images/facebook-icon.png" alt=""></a>
+                        </li>
+                        <li class="icon-item">
+                            <a href=""><img src="./images/instagram-icon.png" alt=""></a>
+                        </li>
+                        <li class="icon-item">
+                            <a href=""><img src="./images/youtube-icon.png" alt=""></a>
+                        </li>
+                        <li class="icon-item">
+                            <a href=""><img src="./images/logo-da-thong-bao-voi-bo-cong-thuong.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-content">
+                        <ul class="menu-content">
+                            <li class="contents-item"><span>Về Chúng tôi</span>
+                                <ul>
+                                    <li><a href="">Giới thiệu</a></li>
+                                    <li><a href="">Hệ Thống cửa hàng</a></li>
+                                    <li><a href="">Tin tức</a></li>
+                                    <li><a href="">gallary</a></li>
+                                </ul>
+                            </li>
+                            <li class="contents-item"><span>Khuyến Mãi</span>
+                                <ul>
+                                    <li><a href="">sản phẩm khuyến Mãi</a></li>
+                                    <li><a href="">Tin tức Khuyến Mãi</a></li>
+                                </ul>
+                            </li>
+                            <li class="contents-item"><span>Dịch vụ khách hàng</span>
+                                <ul>
+                                    <li><a href="">CLB khách hàng thân thiết</a></li>
+                                    <li><a href="">Thanh toán</a></li>
+                                    <li><a href="">Đổi hàng</a></li>
+                                    <li><a href="">vận chuyển và lắp đặt</a></li>
+                                    <li><a href="">bảo hành/bảo trì</a></li>
+                                    <li><a href="">bảo mật thông tin</a></li>
+                                    <li><a href="">hỏi/đáp</a></li>
+                                    <li><a href="">chính sách & quy đinh chung</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-intro">
+                        <p style="font-weight: bold;">Hãy để lại thông tin và nhận những ưu đãi mới nhất từ Nhà Đẹp:</p>
+                        <div class="footer-input">
+                            <input type="text" name="" id="" size="35" placeholder="Họ Tên*">
+                            <input type="text" name="" id="" size="35" placeholder="SDT*">
+                            <input class="to-send" type="submit" name="" value="Gửi Ngay" id="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-end">
+                <p>Copyright @ 2017 by Nha Dep - All right</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/style.js"></script>
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
